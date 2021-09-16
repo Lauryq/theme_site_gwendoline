@@ -108,5 +108,27 @@ function register_post_types() {
 	);
 
 	register_post_type( 'sponsors', $args );
+
+    // CPT devenir sponsor
+    $labels = array(
+        'name' => 'devenir_sponso',
+        'all_items' => 'Tous les devenir_sponso',  // affiché dans le sous menu
+        'singular_name' => 'devenir_sponso',
+        'add_new_item' => 'Ajouter un devenir_sponso',
+        'edit_item' => 'Modifier le devenir_sponso',
+        'menu_name' => 'devenir_sponso'
+    );
+
+	$args = array(
+        'labels' => $labels,
+        'public' => true,
+        'show_in_rest' => true,
+        'has_archive' => true,
+        'supports' => array( 'title', 'editor','thumbnail' ),
+        'menu_position' => 5, 
+        'menu_icon' => 'dashicons-admin-customizer',
+	);
+
+	register_post_type( 'devenir_sponso', $args );
 }
 add_action( 'init', 'register_post_types' ); // Le hook init lance la fonction
