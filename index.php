@@ -4,31 +4,37 @@
 <!-- section description -->
 <?php $loop = new WP_Query((array('post_type' => 'description',))); ?>
 <?php while ($loop->have_posts()) : $loop->the_post(); ?>
-        <h1><?php the_title() ?></h1><br>
+        <h2><?php the_title() ?></h2>
         <?php the_content() ?>
 <?php endwhile;
 wp_reset_query(); ?>
 
 <!-- section parcours -->
+
 <?php $loop = new WP_Query((array('post_type' => 'parcours',))); ?>
 <?php while ($loop->have_posts()) : $loop->the_post(); ?>
-        <h1><?php the_title() ?></h1><br>
-        <?php the_content() ?>
+<h2><?php the_title() ?></h2>
+<?php the_content() ?>
 <?php endwhile;
-wp_reset_query(); ?>
+        wp_reset_query(); ?>
+
 
 <!-- section actualites -->
-<?php $loop = new WP_Query((array('post_type' => 'actualites',))); ?>
-<?php while ($loop->have_posts()) : $loop->the_post(); ?>
-        <h1><?php the_title() ?></h1><br>
+<section id='actualites'>
+
+        <?php $loop = new WP_Query((array('post_type' => 'actualites',))); ?>
+        <?php while ($loop->have_posts()) : $loop->the_post(); ?>
+        <h2><?php the_title() ?></h2>
         <?php the_content() ?>
-<?php endwhile;
+        <?php endwhile;
 wp_reset_query(); ?>
+
+</section>
 
 <!-- section sponsors -->
 <?php $loop = new WP_Query((array('post_type' => 'sponsors',))); ?>
 <?php while ($loop->have_posts()) : $loop->the_post(); ?>
-        <h1><?php the_title() ?></h1><br>
+        <h2><?php the_title() ?></h2>
         <?php the_content() ?>
 <?php endwhile;
 wp_reset_query(); ?>
