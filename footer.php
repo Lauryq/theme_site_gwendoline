@@ -9,7 +9,7 @@
         </form>
     </section>
 
-    <section class="part_right">    
+    <section id="contact" class="part_right">    
         <article class="footer_menu">
             <h3>MENU</h3>
             <ul>
