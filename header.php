@@ -22,7 +22,7 @@
 <?php wp_body_open(); ?>
 
  <nav class="navbar">
-        <a href="#navigation-menu" class="nav-logo js-anchor-link"><img src="wp-content/themes/theme_site_gwendoline/assets/images/logo.png" alt=""></a>
+        <a href="#navigation-menu" class="nav-logo js-anchor-link"><?= get_custom_logo(); ?></a>
         <ul class="nav-menu">
             <li class="nav-item">
                 <a href="#parcours" class="nav-link js-anchor-link">Parcours</a>
