@@ -127,6 +127,14 @@ Version: 1.0
   padding: 2rem;
 }
 
+/* DEVENIR SPONSO */
+#devenir_sponso{
+  background-color: #141414;
+}
+
+#devenir_sponso h2 {
+  color: white;
+}
 /* ----------------------------------------------------------- FOOTER */
 #footer {
     display: grid;
