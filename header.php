@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
+
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <!-- FontAwesome-->
@@ -13,7 +14,7 @@
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(). '/assets/style/style.css' ?>">
     <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@1,600&display=swap" rel="stylesheet">
     
-    
+<?php wp_head(); ?>    
 </head>
 
 <body <?php body_class(); ?>>
@@ -21,7 +22,7 @@
 <?php wp_body_open(); ?>
 
  <nav class="navbar">
-        <a href="#navigation-menu" class="nav-logo js-anchor-link"><img src="wp-content/themes/theme-gwendoline/assets/images/logo.png" alt=""></a>
+        <a href="#navigation-menu" class="nav-logo js-anchor-link"><img src="wp-content/themes/theme_site_gwendoline/assets/images/logo.png" alt=""></a>
         <ul class="nav-menu">
             <li class="nav-item">
                 <a href="#parcours" class="nav-link js-anchor-link">Parcours</a>

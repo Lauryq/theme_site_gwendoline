@@ -15,7 +15,7 @@ Version: 1.0
 /* FONTS */
 @font-face {
     font-family: "Roboto";
-    src: url(../fonts/Roboto-Regular.ttf);
+    src: url(./assets/fonts/Roboto-Regular.ttf);
 }
 
 /* ----------------------------------------------------------- HEADER */
@@ -121,14 +121,17 @@ Version: 1.0
     transform: translateY(-8px) rotate(-45deg);
   }
 }
-
+/* ----------------------------------------------------------- BODY */
+main{
+  margin: 0rem 2rem;
+}
 /* ----------------------------------------------------------- FOOTER */
 #footer {
     display: grid;
     grid-template-rows: 25% 30% 8% 37%;
     justify-content: center;
     height: 98vh;
-    background-image: url(../images/footer.png);
+    background-image: url(assets/images/footer.png);
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
