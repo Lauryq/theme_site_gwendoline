@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <!-- Google Font Archivo -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(). '/assets/style/style.css' ?>">
+    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(). '/style.css' ?>">
     <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@1,600&display=swap" rel="stylesheet">
     
     
@@ -21,7 +21,7 @@
 <?php wp_body_open(); ?>
 
  <nav class="navbar">
-        <a href="#navigation-menu" class="nav-logo js-anchor-link"><img src="wp-content/themes/theme-gwendoline/assets/images/logo.png" alt=""></a>
+        <a href="#navigation-menu" class="nav-logo js-anchor-link"><img src="wp-content/themes/theme_site_gwendoline/assets/images/logo.png" alt=""></a>
         <ul class="nav-menu">
             <li class="nav-item">
                 <a href="#parcours" class="nav-link js-anchor-link">Parcours</a>
