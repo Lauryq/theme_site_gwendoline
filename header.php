@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(). '/style.css' ?>">
     <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@1,600&display=swap" rel="stylesheet">
     
-    <?php wp_head(); ?>
+<?php wp_head(); ?>    
 </head>
 
 <body <?php body_class(); ?>>
@@ -22,8 +22,6 @@
 <?php wp_body_open(); ?>
 
  <nav class="navbar">
-     <!-- menu pour les pages -->
-     
         <a href="#navigation-menu" class="nav-logo js-anchor-link"><img src="wp-content/themes/theme_site_gwendoline/assets/images/logo.png" alt=""></a>
         <ul class="nav-menu">
             <li class="nav-item">
