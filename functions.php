@@ -1,12 +1,18 @@
 <?php
 
-// Lier le style.css
-// wp_enqueue_style( 
-//     'style.css',
-//     get_stylesheet_uri(), 
-//     array(), 
-//     '1.0'
-// );
+function custom_theme()
+{
+    // Ajouter la prise en charge des images mises en avant
+    add_theme_support('post-thumbnails');
+
+    // Ajouter automatiquement le titre du site dans l'en-tête du site
+    add_theme_support('title-tag');
+
+    // Logo du site 
+    add_theme_support('custom-logo');
+}
+add_action('after_setup_theme', 'custom_theme');
+
 
 // Lier le JS
 wp_enqueue_script( 
