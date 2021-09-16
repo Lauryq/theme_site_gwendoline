@@ -33,7 +33,6 @@ Version: 1.0
 
 .navbar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
   background-color: gray;
@@ -121,9 +120,13 @@ Version: 1.0
   }
 }
 /* ----------------------------------------------------------- BODY */
-main{
-  margin: 0rem 2rem;
+
+/* ACTUALITES*/
+#actualites {
+  background-color: #F0EEEE;
+  padding: 2rem;
 }
+
 /* ----------------------------------------------------------- FOOTER */
 #footer {
     display: grid;
